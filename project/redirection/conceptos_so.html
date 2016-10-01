@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/styles_conceptos_so.css">
+    <title>Conceptos</title>
+  </head>
+  <body>
+    <header class="he">
+      <nav>
+        <ul class="menu">
+          <li class="ico"><div class="">
+            <img src="../img/grande.ico" alt="imagen"/>
+          </div></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#">Programacion</a>
+          <ul>
+            <li><a href="#">Vector</a></li>
+            <li><a href="#">Matrix</a></li>
+            <li><a href="#">Lista</a></li>
+            <li><a href="#">Pila</a></li>
+            <li><a href="#">Cola</a></li>
+          </ul></li>
+          <li><a href="#">Conceptos Basicos</a></li>
+          <li><a href="#">Evaluacion</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main">
+    <article class="arti">
+      <h2>Conceptos Basicos de Sistemas Operativos</h2>
+      <br><br>
+      <h3>Que es un Sistema Operativo</h3>
+      <p>
+        Conjunto de órdenes y programas que controlan los procesos básicos de
+        una computadora y permiten el funcionamiento de otros programas.
+        En palabras poco recomendadas es el programa encargado de controlar todos los
+        programas que se ejecutan en un computador.
+      </p>
+      <p>
+        O tanbien se podria decir que un Sistema Operativo (SO) es el software básico de una
+        computadora que provee una interfaz entre elresto de programas del ordenador, los dispositivos hardware
+        y el usuario.<br><br>
+        Las funciones básicas del Sistema Operativo son administrar los recursos de la máquina, coordinar el hardware
+        y organizar archivos y directorios en dispositivos de almacenamiento.<br><br>
+        Los Sistemas Operativos más utilizados son Dos, Windows, Linux y Mac.
+
+ Algunos SO ya vienen con un navegador integrado, como Windows que trae el navegador Internet Explore
+      </p>
+
+      <h3>Para que sirve</h3>
+      <p>
+        El sistema operativo es el intermediario entre el usuario y el hardware, antes el usuario tenia que interactuar
+        directamente con el hardware pero ahora lo hace por medio del SO.<br>
+        Entonces se podria decir que el sistema operativo facilita la experiencia del usuario.
+      </p>
+      <h3>Como funcionan</h3>
+      <p>
+        Los sistemas operativos proporcionan una plataforma de software encima de la cual otros programas, llamados aplicaciones,
+        puedan funcionar. Las aplicaciones se programan para que funcionen encima de un sistema operativo particular,
+        por tanto, la elección del sistema operativo determina en gran medida las aplicaciones que puedes utilizar.
+      </p>
+      <h3>Historia de los Sistemas Operativos</h3>
+      <p>
+      A media que ha pasado el tiempo los Sistemas Operativos han evolucionado de una forma impresionante.
+      </p>
+      <h4>Sistemas Operativos por lotes</h4>
+      <ul>
+        <li>Tipo de carga: Trabajos con secuencia de ráfagas de CPU y E/S. La
+          diferencia de velocidad entre la CPU y la E/S es de tres órdenes de
+          magnitud o más.
+        </li>
+        <li>Utilizacion de la CPU: tiempo_CPU_ocupada / tiempo_total.
+        </li>
+        <li>Ausencia de interacción usuario - máquina.</li>
+        <li>Agrupación por lotes de trabajos similares</li>
+        <li>Secuenciación automática trabajos con tarjetas de control</li>
+      </ul>
+      <h4>Spoling</h4>
+      <p>Buscan reducir los tiempos de E/S utilizando el disco como un
+        buffer para compensar la diferencia de velocidades entre la E/S y los
+        periféricos lentos.
+      </p>
+      <ul>
+        <li>El disco actúa como un buffer de E/S.</li>
+        <li>Mientras el periférico está ocupado, la CPU vuelca a disco.</li>
+        <li>Cuando el periférico está listo, se realiza la transferencia disco - periférico .</li>
+      </ul>
+      <h4>Sistemas operativos Multiprogramados</h4>
+      <p> Ellos aprovechar las ráfagas de espera (de la E/S) de un trabajo para ejecutar las ráfagas de CPU de otros trabajos.<br>
+        Son sistemas por lotes en los que se introduce la técnica de multiprogramación.<br>
+        En los sistemas por lotes sin spooling, no podía haber multiprogramación
+        puesto que se dependía del lector de tarjetas.
+        No se podía intercalar la ejecución de dos trabajos diferentes, puesto que
+        sólo las tarjetas de uno de ellos podían estar en el lecto
+      </p>
+      <h4>Sistemas de tiempo compartido</h4>
+      <p>
+        Varios procesos se ejecuatan al mismo tiempo, con el tiempo compartido se inicia la interaccion del usuario con la maquina,
+        porque antes en los Sistemas por Lotes el usuario llegaba introducia la cinta, luego el sistema la leia y agrupapa los procesos
+        por lotes y el usuario no volvia a interactuar con el sistema hasta que se terminara de ejecutar el programa.<br><br>
+        Ahora hay varios procesos ejecutandoce al mismo tiempo y se mejora el tiempo de respuesta por lo tanto el usuario puede estar al frente
+        indicando algo y recibiendo respuestas (rapadas);
+      </p>
+      <ul>
+        <li>Tiempos de respuesta accesible</li>
+        <li><strong>Mejora la interfas Usuario - Maquina</strong></li>
+        <li>Multitarea: un usuario puede ejecutar varios procesos concurrentemente.</li>
+      </ul>
+    </article>
+    </section>
+    <section class="arriba">
+      <li><a href="conceptos_so.html">Ir Arriba</a></li>
+    </section>
+
+  </body>
+</html>

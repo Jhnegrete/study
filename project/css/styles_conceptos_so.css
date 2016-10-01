@@ -1,0 +1,103 @@
+.arriba  li{
+  display: inline-block;
+  background: #121111;
+  list-style: none;
+  font-size: 20px;
+  color: #E6CCCC;
+  margin: 5px;
+  padding: 8px;
+}
+.arriba li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.arriba li:hover{
+  color: #643232;
+  background: #EBDADA;
+
+}
+.arriba {
+  display: inline-block;
+  background: #121111;
+  padding: 0px;
+  position: fixed;
+  top: 600px;
+  left: 1170px;
+}
+.menu {
+  list-style: none;/*
+  background:#56fc32;*/
+  background: #6BBE61;
+  margin: 0px 10px;
+  border-radius: 10px;
+  width: 98%;
+  top: 0px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.he {
+  margin: 0px 0px;
+  padding: 0px;
+
+}
+
+.menu li {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.menu li a {
+  display: inline-block;
+  margin: 0px 0px;
+  padding: 10px 20px;
+  text-decoration:none;
+  color: #000;
+
+}
+.menu li a:hover{
+  background: #3B8449 ;
+  color:#ffffff;
+  border-radius: 8px;
+}
+.menu li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+.menu li:hover > ul{
+  display: block;
+  background: #70EC5F;
+}
+
+.ico div:hover{
+  /*background: #56fc32;*/
+  padding: 0;
+  margin: 0;
+
+}
+.main {
+  width: 80%;
+  margin: 40px ;
+  background: #EADADA;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  border-radius: 12px;
+}
+.arti {
+  margin: 20px;
+  padding: 15px;
+}
+.main article ul > li, p{
+  padding: 12px;
+  margin: 12px;
+  text-align: justify;
+  line-height: 25px;
+}
+h2 {
+  text-align: center;
+}

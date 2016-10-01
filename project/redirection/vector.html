@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/styles_vector.css">
+    <title>Programcion</title>
+  </head>
+  <body>
+    <header>
+
+      <nav>
+        <ul class="menu">
+          <li class="ico"><div class="">
+            <img src="../img/grande.ico" alt="imagen"/>
+          </div></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#">Programacion</a>
+          <ul>
+            <li><a href="#">matrix</a></li>
+            <li><a href="#">Lista</a></li>
+            <li><a href="#">Pila</a></li>
+            <li><a href="#">Cola</a></li>
+          </ul></li>
+          <li><a href="conceptos_so.html">Conceptos Basicos</a></li>
+          <li><a href="#">Evaluacion</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main">
+
+
+      <section class="concepto">
+        <h3>Vector</h3>
+        <article >
+          <p>
+            Un vector en una estructura que almacena una serie de datos uno seguido del otro, es decir en forma
+            secuencial, los datos que se almacenan deben ser del mismo tipo (int, double, string, etc), se podria
+            decir los vectores son las estructuras mas simple y las mas usadas.
+            <br>
+            <i>Forma en que se representa un vecor</i>
+            <figure>
+              <img src="../img/vector.png" alt="imagen del vector"/>
+            </figure>
+            Como se observa el tamaño del vector es 10 pero por convencion se empiza a tomar los indices desde cero,
+            es decir el vector tiene 9 posiciones y a esas posiciones se hace referencia por medio de los indices.
+            <blockquote cite="http://">
+              El acceso a cada elemento del vector se realiza atraves de un indice, segun la posicion ocupada por el
+              elemento dentro del vector.<br>
+              Un vector siempre tiene un tamaña definido, el cual no varia a lo largo de la ejecucion del programa que
+              lo utilice.
+            </blockquote>
+            <cite>Estrucutura de datos</cite>
+            <br><br>
+            Haciendo un recuento podemos decir que un vector es una estructura de datos estatica, que posee un tamaño
+            definido que no cambia; los datos que almacenamos en ellos deben ser del mismo tipo, la forma de acceder a
+            un dato es por medio de su indice.
+          </p>
+        </article>
+        </section>
+        <section class="codigo">
+          <h3>Codificando en java</h3>
+          <p>
+            Como se declara un vector en java ?
+            <pre>
+                tipo_dato[] nombre = new tipo_dato[tamaño];
+                o tipo_dato[] nombre = {dato,dato,dato};
+              </pre>
+            Entonces si queremos crear un vector para almacenar 5 edades.
+            <pre>
+                int[] edad = new int[5];
+                // Se declaro pero aun no se ha llenado
+            </pre>
+            Para llenarlo debemos recorrerlo mediante un ciclo
+            <pre>
+                for(int i = 0; i < edad.length; i++){
+                // con edad.length obtengo el tamaño del vector
+                edad[i] = 2*i; // Lo lleno con los pares
+                }
+            </pre>
+            Para mostrarlo en pantalla
+            <pre>
+                  for(int i = 0; i < edad.length; i++){
+                  System.out.print(edad[i]+" ");
+                }
+            </pre>
+            Y el resultado sera:
+            <pre>
+                0 2 4 6 8
+            </pre>
+            </p>
+        </section>
+      </section>
+
+
+  </body>
+</html>

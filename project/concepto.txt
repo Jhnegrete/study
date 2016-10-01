@@ -1,0 +1,3 @@
+Html es un lenguaje que nos sirve para crear estructuras
+
+En otras palabras es un lenguaje de maquetado.

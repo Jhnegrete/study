@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Commenter -->
+    <title>Titulo de la pagina</title>
+  </head>
+  <body>
+    <!-- Commenter of the label
+    * strong : sirve para colocar el texto en negita ej: <strong>Text in negrita</strong>
+    * b : Tambien el para colocar un texto en negrita ej: <b>text negrita</b>
+    * br : Salto de linea ej: text ggdgdg <br/> esto saldra en otra linea
+    * i : coloca text en italica ej: <i> texto </i>
+    * blockquote : Sirve para crear una cita ej: <blockquote>Texto citado </blockquote>
+    * cite : va de la mano con blockquote, cite en para agregar el autor de la cita, se puede utilizar como
+    atributo dentro de blockquote o como una etiqueta aparte <cite>Name author </cite>,
+    si se utiliza como atributo se le puede pasar la url de pagina a citar.
+
+                  ENLACES
+    * a la etiqueta a se utliza para agregar ulr de paginas esternas o dentro de nuestro project
+    la etiqueta a tiene distintos atributos entre ellos href
+    * href por medio este le indicamos la ruta de documeto,pagina,image,etc
+    ej: <a href="https://namedominio.com"> Nombre que sera visibel </a>
+    e: <a href="Ruta del archivo en el pc(relativa o absoluta)" Nombre </a>
+    * target este es un atributo para la etiqueta a, y sirve para que a la hora de darle clik al enlace
+   se no abra en una pestaña nueva y no en la misma pestaña del index
+   ej: <a target="_blank" href="dominio o rura"> nombre </a>
+   link : nos permite enlasar otros archivos con el index, tiene distintos atributos estre ellos
+   rel : sirve decir que tipo de reelacion es ej: <link rel="stylesheel" href="css/master.css">
+   type : dice el tipo de archivo
+
+            LISTA
+   ul : lista desordenada
+   ol : lista ordenada
+   li : representa un iteen de la lista
+   ej : Lista desordenada <ul> <li>Item1</li> <li> Item2</li></ul>
+   ej : Lista ordenada <ol> <li>Item1</li> <li> Item2</li></ol> emumera los item
+
+            IMAGEN
+   * img : esta etiqueta se usa para agregar imagenes, nota: la etiqueta img no se cierra
+   * src : es un atributo que nos sirve para indicar la ruta del archivo
+   * width : para dar el ancho de la imagen
+   * height : alto de la imagen
+   * alt : me sirve para colocar un texto cuando no se cargue la imagen
+   ej: <img src="Ruta" width="300" height="300" alt="Imagen" />
+
+             TABLA
+   * table : nos sirve para crear una tabla
+   * tr : hace referencia a cada fila de la tabla
+   * td : hace referencia a las columnas
+   nota la etiqueta td se debe colocar dentro de tr
+   ej : <table>
+            <tr><td>dato1</td><td>dato2</td><td>dato3</td></tr>
+            <tr><td>dato1</td><td>dato2</td><td>dato3</td></tr>
+        </table>
+
+            FORMULARIO
+  * form : sirve para crear formularios
+  * input : con esto se crea una caja donde podemos ingresar valores, y lleva como atributo type
+  dentro del input peden ir varios atributos entre ellos id,class,value,name,type,etc
+  * type : Aqui se indica el tipo de input text,password,button,radio,checkbox,range,tel,email, ect
+  * select : sirve para colocar como un menu de seleccion
+  ej: <select> <option value="val1">Opcion1</option>
+               <option value="val2">Option2</option>
+      </select>
+
+    -->
+
+    <h1>Titulo de la pagina</h1> <!-- Es recomendable solo usar un h1 en la pagina -->
+    <p>
+      IMAGEN
+    </p>
+<img src="img/imagen.jpg" alt="Imagen"  width="300" height="300" title="This is a image"/>
+    <p>
+      This is one parrafo
+      Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprtarget="_blank" ehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    </p>
+    <p>
+      ENLACES
+    </p>
+    <a target="_blank" href="https://google.com.co" title="Entrar a Goolge"> Google</a>
+    <br>
+    <a target="_blank" href="Asi_seran_las_pruebas_SABER_PRO_2012-1.pdf" title="Ver el documento"> Pdf</a>
+    <br>
+    <p>
+      TABLA
+    </P>
+      <table border="0" style="border-collapse:collapse">
+        <tr>
+          <td>Nombre</td>
+          <td>Edad</td>
+          <td>Nota</td>
+        </tr>
+        <tr>
+          <td>Sheila</td>
+          <td>19</td>
+          <td>4.0</td>
+        </tr>
+        <tr>
+          <td>Jose</td>
+          <td>19</td>
+          <td>4.9</td>
+        </tr>
+      </table>
+
+
+    <h4>Este es un formulario</h4>
+    <p>
+      <strong>Tipos de input de un formulrio</strong>
+    </p>
+    <form class="" action="ejemplo.html" method="post"><br>
+      <table border="solid">
+        <tr>
+          <td>
+            <strong>Tipo</strong>
+          </td>
+          <td>
+            <strong>Ejemplo</strong>
+          </td>
+          <td>
+            <strong>Como se ve</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            text
+          </td>
+          <td>
+            <label for="user">Usuario:</label>  <!--IMPORTANTE el dato en for="" debe corrresponder al id del input-->
+          </td>
+          <td>
+            <input type="text" name="user" value=""placeholder="ej: Jhumberto" id="user"><br>
+          </td>
+          </tr>
+
+          <tr>
+            <td>
+              password
+            </td>
+            <td>
+              <label for="pass">Contraseña:</label>
+            </td>
+            <td>
+              <input type="password" name="pass" value="" placeholder="ej: C0ntr@53Ña" id="pass" autofocus><br>
+            </td>
+            </tr>
+            <tr>
+              <td>
+                select
+              </td>
+              <td>
+                <label for="pais">Pais</label>
+              </td>
+              <td>
+              <select class="" name="" id="pais">
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+                <option value="mexico">Mexico</option>
+                <option value="brasil">Brasil</option>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                range
+              </td>
+              <td>
+                <label for="range">Rango</label>
+              </td>
+              <td>
+                <input type="range" name="name" value="" id="range">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                number
+              </td>
+              <td>
+                <label for="tel">Numero</label>
+              </td>
+              <td>
+                <input type="number" name="name" value="" id="tel">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                email
+              </td>
+              <td>
+                <label for="mail">Correo</label>
+              </td>
+              <td>
+                <input type="email" name="name" value="" id="mail">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                tel
+              </td>
+              <td>
+                <label for="t">Telefono</label>
+              </td>
+              <td>
+                <input type="tel" name="name" value="" id="t">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                checkbox
+              </td>
+              <td>
+                Escoja
+              </td>
+              <td>
+                <input type="checkbox" name="name" value="" id="che" > <label for="che">Java</label><br>
+                <input type="checkbox" name="name" value="" id="che2"> <label for="che2">C#</label>
+              </td>
+            </tr>
+            <td>
+              radio
+            </td>
+            <td>
+              Escoja
+            </td>
+            <td>
+              <input type="radio" name="name" value="" id=r1> <label for="r1">private</label>
+              <input type="radio" name="name" value="" id=r2> <label for="r2">public</label>
+            </td>
+            <tr>
+              <td>
+                button
+              </td>
+              <td>
+
+              </td>
+              <td>
+                <input type="button" name="name" value="Enviar">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                submit
+              </td>
+              <td>
+
+              </td>
+          <td>
+            <input type="submit" name="name" value="ENTRAR">
+          </td>
+
+        </tr>
+
+      </table>
+
+    </form>
+
+    <p>
+      This is other parrafo
+      Lorem ipsum dolor sit amet, consectetur <strong>adipisicing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. <br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+    <h2>This is the subtitle of article</h2>
+
+    <p>
+    Este el otro parrafo
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <blockquote cite="http://">
+      Esto es una cita <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </blockquote>
+    <cite>Autor de la cita</cite>
+    <p>
+      lISTAS
+      <ul>
+        <li><a href="#" title="html">HTML</a></li> <!--Uno el concepto de enlace con el de lista-->
+        <ul>
+          <li>head</li>
+          <li>body</li>
+        </ul>
+        <li><a href="#" title="css">CSS</a></li>
+        <li><a href="#" title="sass">SASS</a></li>
+        <li><a href="#" title="javascript">JAVASCRIPT</a></li>
+      </ul>
+    </p>
+
+
+  </body>
+
+</html>
